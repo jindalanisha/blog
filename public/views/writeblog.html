@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<style>
+textarea
+{
+  border:1px solid #999999;
+  width:100%;
+  height:70vh;
+  margin:5px 0;
+  padding:3px;
+}
+#abc {
+margin-left: 10px;
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.sidenav');
+var instances = M.Sidenav.init(elems, {});
+});
+</script>
+<script>
+function validateForm() {
+  var x = document.forms["input"]["type"].value;
+  var y = document.forms["input"]["author"].value;
+  var z = document.forms["input"]["title"].value;
+  var a = document.forms["input"]["content"].value;
+  var b = document.forms["input"]["date"].value;
+  if (x == "" || y=="" || z=="" || a=='' || b=='') {
+    alert("All fields must be filled out");
+    return false;
+  }
+  return true;
+}
+</script>
+<nav>
+  <div class="nav-wrapper pink darken-3">
+    <a id="abc" href="#!" class="brand-logo">&nbsp;&nbsp;Industry Blog</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/home">Home</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/home">Home</a></li>
+  <li><a href="#">Logout</a></li>
+</ul>
+<br>
+<br>
+<div class="row" >
+    <form class="col s12" method='post' action="uploadblog" name="input" onsubmit="return validateForm()">
+    <br>
+    <label>Browser Select</label>
+ <select name="type" class="browser-default">
+   <option value="" disabled selected>Choose Type of Article</option>
+   <option value="Health">Health</option>
+   <option value="Nature">Nature</option>
+   <option value="personal_devlopment">Personal Development</option>
+   <option value="Travel">Travel</option>
+   <option value="Technology">Technology</option>
+   <option value="Investment">Investment</option>
+ </select>
+ <br>
+    <div class="row">
+        <div class="input-field col s12">
+         <textarea name="author"   class="materialize-textarea"></textarea>
+          <label for="textarea1">Author of Blog</label>
+        </div>
+      </div>
+        <br>
+      <div class="row">
+        <div class="input-field col s12">
+         <textarea name="title"  class="materialize-textarea"></textarea>
+          <label for="textarea1">Title of Blog</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+         <textarea name="content"  class="materialize-textarea"></textarea>
+          <label for="textarea1">Type Your Blog Here</label>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="input-field col s12">
+         <textarea name="date"  class="materialize-textarea"></textarea>
+          <label for="textarea1">Date (DD-MM-YY)</label>
+        </div>
+      </div>
+      <br>
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+    </form>
+  </div>
+        
+</body>
+</html>

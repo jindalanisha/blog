@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	
+	
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+	<style>
+	
+	#photo {
+		padding: 20px;
+	}
+	#techno {
+		margin-left: 10px;
+	}
+</style>
+
+
+<script>
+	
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems, {});
+	});
+</script>
+
+
+<nav>
+	<div class="nav-wrapper blue-grey darken-3">
+		<a id="techno" href="#!" class="brand-logo">Industry Blog</a>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			
+			<li><a href="/writeblog">Write a blog</a></li>
+			<li><a href="/home">Home</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+	</div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+	<li><a href="/writeblog">Write a blog</a></li>
+	<li><a href="/home">Home</a></li>
+	<li><a href="#">Logout</a></li>
+</ul>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<center> <% if (data!=null && data.length > 0) { %>
+		    <% data.forEach((elem, index) => { %>
+		         <p><%= elem.content %></p>
+		     <% }) %>
+		<% } else { %>
+            <p>No such article </p>
+        <% } %>
+        
+</center>
+
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

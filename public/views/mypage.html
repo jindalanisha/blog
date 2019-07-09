@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<style>
+
+#abc {
+margin-left: 10px;
+}
+</style>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.sidenav');
+var instances = M.Sidenav.init(elems, {});
+});
+</script>
+
+<nav>
+  <div class="nav-wrapper pink darken-3">
+    <a id="abc" href="#!" class="brand-logo">&nbsp;&nbsp;<%= title %></a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/writeblog">Write a blog</a></li>
+      <li><a href="/home">Home</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/writeblog">Write a blog</a></li>
+  <li><a href="/home">Home</a></li>
+  <li><a href="#">Logout</a></li>
+</ul>
+
+     <table class='table'>
+        <% if (data!=null && data.length > 0) {%>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Title</th>
+                        <th></th>
+                        <th scope="col">Author</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% data.forEach((elem, index) => { %>
+                        <tr>
+                            <td></td>
+                            <td><%= elem.title %></td>
+                            <td></td>
+                            <td><%= elem.author %></td>
+                            <td><a href="http://localhost:9000/view?field=<%=title%>&title=<%= elem.title %>"> View full...</a></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">No articles found </p>
+        <% } %>
+    </table>
+</body>
+</html>

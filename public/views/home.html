@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	
+	
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+	<style>
+	
+	#photo {
+		padding: 20px;
+	}
+	#techno {
+		margin-left: 10px;
+	}
+</style>
+
+
+<script>
+	
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems, {});
+	});
+</script>
+
+
+
+
+
+
+
+<nav>
+	<div class="nav-wrapper blue-grey darken-3">
+		<a id="techno" href="#!" class="brand-logo">Industry Blog</a>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			
+			<li><a href="/writeblog">Write a blog</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+	</div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+	<li><a href="/writeblog">Write a blog</a></li>
+	<li><a href="#">Logout</a></li>
+</ul>
+
+
+
+
+
+
+<div id="photo" class="center m4">
+
+	<img class="circle "src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA/1BMVEWHZFAdPUwQMD/ktpLxyaXwa37uxqLrwJwALD4AOkmLZlH1zKf0bH8MO0rlt5MAKDvru5UAIDd+T2AAJDkALj5/XEqyW2wAJjr60KoAHzeCX0wAM0d2XE0UO0x8X04aM0AyPENGRUXQqYrbsI5xaGDjv55qVktIRFQAMEaqWWt7b2TlaHtTRla7oor8boLZZXhUS0e+XnC+nIE+QUQ/SU2ahHE1QVBwTFxOUlIoP05fUEkwQEiNgHIAEjFgYV6ifma3mYDRspWkkX5wX1RoZWGYVWZVWlw5TFRpS1t5dW6XiXrPY3WKUmJZVVI/QlJkW1W4kHOadV6JcmEABi/Hq5HIA5CYAAAM7klEQVR4nO2ca1vaSheG5WQnE0iCiSVQEQyoux7wULAo1Crb1qptd+3r//8t71ozCRIgEIkkE688H1Ri5MrtOq9EV1YSJUqUKFGiRIkSJUqUKFGiRIkSJUqUKFGiRIkSJUqUKFGiRIkSJUqUKNGCoqOK+mJeW4BU2di5ON5iOr7Y2aisvCFMQNnYqhnEGBExavXjnZU3AYl4aWKkJ2UQUj/ejDkkOOdxbSrekLK+E2NGSnc+zcLjIrWLmDICX52QeXyccSeGiMBX84XHGeubcWN8ER8iGvEyI92sv4iPMW7FB5HS4xfzgYx61BfuV3SjNjd/TkesrcTCjHRrEQMykVrUF+9DtFJfzIA2ovBGpBsB+EDGJ8ER6cXCHupY8VhoxOCAgLghMOJiRWJCUWN465UADWEr/2u4KJOofkp3Xgkwna4LSUg3g5WJUREhm3BaezXAdFrEuk+3Xs+EQhqRbrxaEDIJGImv6aNpTKdRA42JHgfyUdIc9wDhamIlmI/qV72JY1EjuRU0zRStm/FfkWC5JmgpLGud0vgxoXJNwChMG23tSh8/SKKmcimgCdU97XSCUKTlIr0ISFg81RrFCUKBsimtBwNM1zQlU548Kg5hJbiTZhRG6EqoZDNqMEeBnbRsKdyG5HK0MxInEOmnYOWedMGEDSQsWaP5xhBmJUUD8UGeuVIyigWZRu+4M6owFTFguYdimMkowEZ643VfEMKgYVi8AkJkK59qv1z+blSiZuMKOlZAFALhnqo2NU11f0uQCSpgNYREioRtks6MNzaiJFOf+xmPfAuWA0CloZavNDCkm/BCDEJfTanau/M4LcNMePUFSJWx35Uw5cJHNSzuPanTv4FpBgi7kFCV8flClM50cz5hebBN8Nbg85Ee/7p0wwAVywBTajAFk72RdxOFcP6STT80e3Dx3fbzkStmUtJTFGbCvQYU/UYJOtTRikjEuJU4f42oX5t9HTmHA5La5FmT59FMpgGArCTqVhwJAfAams5SfzC8+JrWRxsWO8xH0U3RkD1CmloMCYtPsvmdpI2a2XVOhOYFv9abDiCDPC2DTV0FIx6E5UNTfgITlp9WnUypdzScJNTuKGAGOjaYE119WywyTbFvZtF46o05sAnVS00bYJ+dUUZNaOlGTVG00aopCuGsaqF+N7MyRqG6bV7y8zB/gpMatYbiMuEedjWKNbrMiEPFN7azWRNCqzgws9yESIb2MiwXoNLQSxCWWme0MRCma/MGLB/K2awMHtk2ZV4rCAEyba9ELFcQZrR+EWuj1nZ5qSCE3p03AR/NIlr5WjZv0DpEBTIlU1bHAJWMkW7Yk/7IzwtyO3/a9MQtUd4GE5pNVb0DUjxk6NfvMOT0MUDwziIeGhsuDEGWbVPuypAuHmJg2WzNMLgl08TYlt/hpDQOmMn0GhoLRvf7RI1ma2SL4ViAbBeZCYEPMml5IKMlYYICm74DQ00AKhbvasbmQ1FWws8lv2T3ZfpgGwtEE00o3xfb+Jmk9W4WnPYdb0LHEXk+ZYCGcytRkJZm5XnlXerLdjWTkRDSC5CZl1/gMzhpuYkvgTAzCWgHY5Ob0NllCFMOh8kUws0mNYGQMNNlzeINfDZvvgzYSyT0kJ1Iy6cOoTj3SO1UU7o3TVbOIIUCoT6QWRh+wWhcVZ844AxCXEaBh/f53IGEgiwT8Wkvg9eGLOvMDDAeEDKyrDzoY0283pazcwi1DpoO5g3NmUFESTQr9mMKpAs9Nv76VWBaLRs97qRNxuXweRMqlg2Ioz53ekH6bhSr+aV7SCg4PxShVVtVkRPd8/AZbiYh89HyHrSmfYdQkJ4NxbbeMOlm5SdIFkV0z1qRo62uZn0Ran+he1XZft9pAsW5fbjCR0R9FeMNOxfMnW1eKyY1nVA71Um5yxq3gU66bNASKAx5vagxr9RZPELK0benAk4nhHat3IXpEFl7ht7BlaI41RAFbsrmiKyZ4q2M3E9PN+F0Qm0POjnNyagG695EuS1ja5PwNtu8IWofZ8LDnvkCwoym8UZHUQzcwCGhUE6K2VTdY4R9lVf61ZcRPhuzpHY1rUkEc1Is+urWH5mVC50lUfn+JV46jEdLJ6kGrnFEc1K8l3+8Qi3ZvC7q4xXwBYRaW2+Dx14Zwjkp5hrwqkq7f6hiXVyQUOv8r9k47beLYpV7R0BIj3U9vTihYkFFbJZVItB4Py5cnQawYUZTNCJcT+oSNqhBCDPKKc6IPbE6tlHhyiYQIa+EdZH/BtFIFwPkUnYn37gQZlE6RTDu84q/YBxegZPWNogwj3tN0SZhnfeihFDqjYuLkrgmxFxjeM1N8wnZnSeD1gWOQrY85R3qIoSYZ6DUi7LM9xAY0Ws0nEfINsI1uiFqLbSFRrybYcQZhLihITv0QpgloofoJ1KcYcQZG+FGSfw/xmeqGLOMOGMjjNVedPsx0WMyI516EuLCVJw9/mzRun3P4kWE+PSC4DlmKEg2xYEXoudGuKMbIrcybtELSDYv22JApTDi8I9bHNFPqpefeu28wUfj9Z+wakWPfOqxTezrhsjN6BRV8IE234TaVTlugCt0Mz29ZEwj1KBQxA2QIZJp2WYKodKopeMVg1y0UjOmIE4SAmA9Hv/ha0KQUScddYJQs2qCLfBfILqjTqSbcULttBa/EHwWXfk0fv/CTahoneOY/l9PR3T976o3odL4G8cUM6512ZNQi8WwNFfr2dXphEpGWY/64l5FQDjyRMa7IR5+eCOE8irXkFBxnt17a4RM7kzzVgizCWHMhdXi7RNm3z7hkPENE9qMb5qQMb5xwom+9E0QVt40YaWyTr9aM6anP1/hnKivcmFV1itfT7dlWfYmhAlYsf48VuJIWVl//NMYp5u2xYA2HClprCDBNx8njedFyCmVxp/H9ZhAVipfrdXpdJ6E3JQZ9NeoL3+ewHqz8GYQcsiG2JCQONE5Z+DNJnQgRY1J8M7GPLy5hDwmLaghUeNMCMw32zt9EyIkhqRYzUDl0fKF55OQQVqPwtiR0k3LNE2P6rCQDRUNZf0VY1tMN26rH84v7waH19tZTjqL1ftpE8UG0zKN06vO3uX5h2pbgFsadLNdTaVS1Wr1w4d//kndfr+7Hxw+cVYu2a13mocylgVg/eb329QHUBXfNlVtR7z1p7TLLmQoRgqooA+p28ubu7t+//5+ADpEPT09HV4xwZFOp9Pv9/fubm4QCn+CgVWr7jf8FSUi3Th3A7qFV4vAQ/1jYzyramvWu/SiMyP9NevKXk/V/6JCbIcDCIjdaBB7YQEC4m0UiCECRoJIQ3NRGzFsR6U74QIC4r/hItJeyICpVC9cws2wTQhGDPWPSum/ERCGGonjzVo4CpUwAr5wc00EYRium9L/oiBMpUIDjCgMQ82m51EApkIcFSMJQ9B5WITBwvBs8R+thvWHibQdAPD8RFqcMKxROEg1LKzlC4sTtkMi3AjgpNJJ68fiiCHVi0BhWMjl3wdw03DqRZDht/C5lcuJH4gLXyA6aT4XxE3DCcQg1bCQywVy01DmC/9heDZxYuEHOGluf5zQf4kMJRB9N6XSiXPl0lDv80DYOhi+LvAT/ROGEYjUb1Mq5X7ygDt/P9R+DvXgvDxhZxTyn/1GZigTlN8wLBy0Hmx3PHto5blyXPar1jc8AfKr/z4nhL2p7z2i9DGfd8wtfWvlJpTfP2BgmF/9AqaqSwf0fztG2s/l1xzvkw7282OArZMC/64EX/t30+WvMujtvIsoMEkHrVz+QeIv8OCJy4z5/Jr9PQnya/5keOI8whBmxLkXscZ1gkbjX/48gMPS2ogV80dnkuvEz/zE3bnvvvyaP7ftru7ut4ZZheWT1jdeFM6HiGCzaqp64HHibC2bkF7MDcOq9HHUIZ2Egsn12YQsiRbeu0/c9ZFSlz4F+2q7pR+5obmgEtiGgeT6nGZ22dtIayMnvpf8pJulpxp/9b5w/uBc+c+hXSSeTvmHb/ywdHbkEK75q4lLTzU+633hLO8E3PDSdlvMFb+x7xzZxx3XzX/0WfSXPef7rffSN8eGBdchKILSLtoy/9s+OnRdv23Nkhdufuu9dITumB+t5XAIiyCYTYIEM3TT/bx94oHPor/krsbvmu03DLoPqTUoAY6bgpOyIsiw1uxsChWjhXb9mX+Bmy53gPK5ZoM+FI0k/T5qOd4Hhz5KjgNAgmmx0QoKSx5yEXhua2Jq9CJc7gDlM9FIR7wIFoDA3llIRz9GEKrSe1bdpX1eBNFzfbrpcpOp30Sz+5ByiuBne2dxfuYGkLBBqx48V8ufPt10ucnUb6I5e77YwswC6vvEES01mUbwCMYULREw0CLx1bTUzjSq22ouLbMzDf9JqGlaZrkI64HS2Vrmvi3QjcPX0xLLBRXBhKlljvlCJBpw0xcR/h91UqVz0p2I6QAAAABJRU5ErkJggg==" alt="avatar aayega yahan">
+
+</div>
+
+
+
+
+
+<div class="container">
+
+	<div id="cardsContainer" class='row'>
+		
+		<div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Health</span>
+				</div>
+				<div class="card-action">
+					<a href="/health" >Click to Read.....</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Investment</span>
+				</div>
+				<div class="card-action">
+					<a href="/investment">Click to Read.....</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Technology</span>
+				</div>
+				<div class="card-action">
+					<a href="/technology">Click to Read.....</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Travel</span>
+				</div>
+				<div class="card-action">
+					<a href="/travel">Click to Read.....</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Personal Development</span>
+				</div>
+				<div class="card-action">
+					<a href="/personal">Click to Read.....</a>
+				</div>
+			</div>
+		</div> 
+        <div class="col s12 m6 l4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Nature</span>
+				</div>
+				<div class="card-action">
+					<a href="/nature">Click to Read.....</a>
+				</div>
+			</div>
+		</div> 
+
+	</div>
+
+</div>
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
